@@ -44,7 +44,7 @@ Storybook will open in your default browser.
 
 ### Technical Details  
 
-- Use **React** and **TypeScript**.  
+- Use **React**, **ShadCN** and **TypeScript**.  
 - Write **Storybook stories** to showcase the flexibility and reusability of your components.  
 
 ---

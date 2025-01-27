@@ -1,62 +1,122 @@
-### Teamboks UI - Technical Assessment
+# Teamboks UI - Technical Assessment  
 
-Hey there! 👋
+Hey there! 👋  
 
-Ready to build something cool? We're so happy to have you here and can’t wait to see your take on this challenge.
+Welcome to the Teamboks UI technical assessment. We’re excited to see your creativity and approach to building flexible and reusable components. No need to stress – have fun and show us how you think about component design!  
 
-No need to stress about making it perfect – we’re more interested in seeing how you approach building components with flexibility in mind. 
+## Setup  
 
-It’s something we’re super passionate about in our daily work, so getting on the same page here is really important to us.
+1. Clone this repository to your local machine.  
+2. Install dependencies:  
 
-As a tip, checking out other Storybook design systems could be a great source of inspiration ✨
+   ```bash
+   npm install
+   ```  
 
-## Setup
-```bash
-npm install
-npm run storybook
-```
+3. Start Storybook:  
 
-## Requirements
+   ```bash
+   npm run storybook
+   ```  
 
-### Core Features
-1. Multiple alert types (success, error, warning, info)
-2. Support for layouts:
-   - Title + description
-   - Description only
-   - With/without icon
-   - Optional close button
-3. Theme/variant customization
-4. Accessibility implementation
+Storybook will open in your default browser.  
 
-### Technical Details
-- Use React & TypeScript
-- Write stories demonstrating component flexibility
+---
 
-### Example Usage
-```tsx
-<Alert type="success">Operation completed</Alert>
+## Requirements  
 
-<Alert 
-  type="warning"
-  title="Update Available"
-  description="A new version is ready to install."
-/>
+### Core Features  
 
-<Alert 
-  type="info"
-  variant="subtle"
-  icon={<CustomIcon />}
-  onClose={() => {}}
->
-  Custom content here
+1. Support for **multiple alert types**:  
+   - `success`  
+   - `error`  
+   - `warning`  
+   - `info`  
+
+2. Flexible layouts:  
+   - Title + description  
+   - Description only  
+   - With/without an icon  
+
+3. Optional close button.  
+4. Customizable themes/variants.  
+5. Accessibility-friendly implementation.  
+
+### Technical Details  
+
+- Use **React** and **TypeScript**.  
+- Write **Storybook stories** to showcase the flexibility and reusability of your components.  
+
+---
+
+## Example Usage  
+
+Here are a few examples of how the `Alert` component could be used:  
+
+```jsx
+<Alert type="success">Operation completed</Alert>  
+
+<Alert  
+  type="warning"  
+  title="Update Available"  
+  description="A new version is ready to install."  
+/>  
+
+<Alert  
+  type="info"  
+  variant="subtle"  
+  icon={<CustomIcon />}  
+  onClose={() => {}}  
+>  
+  Custom content here  
 </Alert>
 ```
 
-### Evaluation Criteria
-- Component API design
-- Flexibility & reusability
-- TypeScript implementation
-- Story organization
-- Code quality
+---
 
-Time expectation: 2 hours
+## Optional Challenge (Just for Fun)  
+
+If you’re feeling adventurous, we’ve got an extra challenge for you!  
+
+### Build a Multi-Select Component Using ShadCN  
+
+- Create a **multi-select dropdown** with support for async options (e.g., options fetched from an API).  
+- Include flexible props like:  
+  - `placeholder`  
+  - `loading` state  
+  - Clear functionality  
+
+- Write stories to showcase:  
+  - **Loading state**  
+  - **Custom placeholder text**  
+  - **Pre-selected options**  
+  - **Disabled options**  
+
+#### Example Usage  
+
+```jsx
+<MultiSelect  
+  options={async () => fetchOptions()}  
+  placeholder="Select items..."  
+  isLoading={false}  
+  onChange={(selected) => console.log(selected)}  
+/>
+```  
+
+This challenge is purely optional – no pressure! It’s a great way to show off if you’re feeling up for it.  
+
+---
+
+## Evaluation Criteria  
+
+We’re looking for the following:  
+
+1. **Component API design** – Is it intuitive and flexible?  
+2. **Flexibility & reusability** – Can the component adapt to different scenarios?  
+3. **TypeScript implementation** – Are types used effectively to ensure reliability and clarity?  
+4. **Story organization** – Are stories well-structured and demonstrate the component’s potential?  
+5. **Code quality** – Is the code clean, readable, and maintainable?  
+
+
+Have fun with it! We’re so excited to see what you create! 🚀
+

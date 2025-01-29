@@ -87,10 +87,10 @@ If you’re feeling adventurous, we’ve got an extra challenge for you!
   - Clear functionality  
 
 - Write stories to showcase:  
-  - **Loading state**  
-  - **Custom placeholder text**  
-  - **Pre-selected options**  
-  - **Disabled options**  
+  - Loading state
+  - Custom placeholder text
+  - Pre-selected options 
+  - Disabled options
 
 #### Example Usage  
 
@@ -116,7 +116,6 @@ We’re looking for the following:
 3. **TypeScript implementation** – Are types used effectively to ensure reliability and clarity?  
 4. **Story organization** – Are stories well-structured and demonstrate the component’s potential?  
 5. **Code quality** – Is the code clean, readable, and maintainable?  
-
 
 Have fun with it! We’re so excited to see what you create! 🚀
 
